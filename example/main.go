@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/kompiuter/secretary"
+	"github.com/kompiuter/secretary/secretaryproblem"
 )
 
 func main() {
 	numApplicants := 100
-	numTrials := 10000
+	numTrials := 100000
 
 	e := secretary.Simulate1e(numApplicants, numTrials)
 	nth := secretary.SimulateNth(numApplicants, numTrials, 4)
